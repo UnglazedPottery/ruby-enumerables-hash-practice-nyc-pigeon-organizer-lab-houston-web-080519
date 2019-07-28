@@ -2,7 +2,7 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
   pigeon_names = []
   data[:gender].keys.each do |pigeon|
-    pigeon_names << name
+    pigeon_names << pigeon
   end
   
   pigeon_names.each do |bird|
