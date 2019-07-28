@@ -1,8 +1,10 @@
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
   pigeon_names = []
-  data[:gender].keys.each do |pigeon|
+  data[:gender].each do |key, pigeon_array|
+    pigeon_array.each do |pigeon|
     pigeon_names << pigeon
+    end
   end
   
   pigeon_names.each do |bird|
